@@ -8,10 +8,10 @@ Data volume fits in memory and does not effect performance while sequential look
 * On application startup, it loads user and role data and keep it in memory in array structure. Data are kept in JSON format in files.
 * Sequential search is performed while looking for a particular user or role in respective array.
 * To find subordinates of a user, the application does as follows,
-      * Find the role ID for the user
-      * find all the roles below 
+      - Find the role ID for the user
+      - find all the roles below 
             (First time it builds the list of sub roles and keep the list in memory to be used for further request for same role.)
-      * find users with the list of sub roles 
+      - find users with the list of sub roles 
 
 ![](docs/design_overview.PNG)
 
